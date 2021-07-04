@@ -1,11 +1,11 @@
-package com.wolfe.kommerce.model
+package com.wolfe.kommerce.reader.model
 
+import org.springframework.data.annotation.Id
+import org.springframework.data.relational.core.mapping.Table
 import java.time.LocalDate
 import java.util.*
-import javax.persistence.*
 
-@Entity
-@Table(name = "loan")
+@Table("loan")
 data class LoanEntity(@Id
                       var id: Long,
                       var approvalDate: LocalDate?,
